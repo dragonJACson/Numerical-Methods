@@ -1,4 +1,4 @@
-function x = gaussSeidelIteration(A, b, x0, eps, max_n)
+function [x, n] = gaussSeidelIteration(A, b, x0, eps, max_n)
     D = diag(diag(A));
     L = tril(A, -1);
     U = triu(A, 1);
